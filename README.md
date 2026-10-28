@@ -1,3 +1,16 @@
+Setup:
+```
+conda create -n seegroup_all python=3.11
+pip install -r requirements.txt
+```
+Run demo:
+```
+python demo.py \
+  --image path/to/image.png \
+  --checkpoint-path checkpoints/seegroup.pth \
+  --output-dir predictions/demo
+```
+
 # [CVPR 2026] SeeGroup: Multi-Layer Depth Estimation of Transparent Surfaces via Self-Determined Grouping
 
 <img src="imgs/method.png" width='1000'>

@@ -19,8 +19,8 @@ class LayeredDepth(Dataset):
         size=(1024, 1024),
         hf_dataset='princeton-vl/LayeredDepth',
         hf_split=None,
-        streaming=True,
-        cache_dir=None,
+        streaming=False,
+        cache_dir="dataset/splits",
         tuple_layer='layer_all',
         num_examples=None,
     ):

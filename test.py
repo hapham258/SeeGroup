@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 from __future__ import annotations
 
 import argparse
@@ -187,8 +186,8 @@ def main():
         mode="test",
         hf_dataset="princeton-vl/LayeredDepth",
         hf_split="test",
-        streaming=True,
-        cache_dir=args.cache_dir.expanduser().as_posix() if args.cache_dir else None,
+        streaming=False,
+        cache_dir="dataset/splits",
     )
     dataloader_dataset = StreamingDatasetAdapter(dataset)
 

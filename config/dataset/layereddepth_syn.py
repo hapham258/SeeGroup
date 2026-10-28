@@ -7,8 +7,8 @@ layereddepth_syn_train=dict(
     mode='train',
     hf_dataset='princeton-vl/LayeredDepth-Syn',
     hf_split='train',
-    streaming=True,
-    cache_dir=hf_cache_dir,
+    streaming=False,
+    cache_dir="dataset/splits",
     shuffle_buffer_size=1024,
     num_examples=14800,
 )
